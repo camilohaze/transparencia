@@ -680,6 +680,17 @@ a:focus {
 	position: relative;
 }
 
+.nav-menu > li.menu-item {
+	background-color: #F3720D;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nav-menu > li.current-menu-item {
+	background-color: #F9A835;
+	color: rgb(162, 87, 0);
+}
+
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
 	font-weight: 700;
@@ -4042,7 +4053,7 @@ p > video {
  */
 
 @media screen and (min-width: 59.6875em) {
-	body:before {
+	/*body:before {
 		background-color: #fff;
 		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 		content: "";
@@ -4053,20 +4064,20 @@ p > video {
 		top: 0;
 		left: 0;
 		width: 29.4118%;
-		z-index: 0; /* Fixes flashing bug with scrolling on Safari */
-	}
+		z-index: 0;
+	}*/
 
 	.site {
 		margin: 0 auto;
-		max-width: 1403px;
+		max-width: 1090px;
 	}
 
 	.sidebar {
-		float: left;
-		margin-right: -100%;
-		max-width: 413px;
-		position: relative;
-		width: 29.4118%;
+		position: absolute;
+		width: 25.4118%;
+		background-color: #fff;
+		height: 100%;
+		margin-top: 95px;
 	}
 
 	.secondary {
@@ -4083,8 +4094,7 @@ p > video {
 
 	.site-content {
 		display: block;
-		float: left;
-		margin-left: 29.4118%;
+		float: right;
 		width: 70.5882%;
 	}
 
@@ -4164,7 +4174,7 @@ p > video {
 	.main-navigation {
 		font-size: 12px;
 		font-size: 1.2rem;
-		margin: 0 20% 20%;
+		margin: 0 10% 10%;
 	}
 
 	.main-navigation a {
@@ -5362,6 +5372,9 @@ p > video {
 	.main-navigation {
 		font-size: 16px;
 		font-size: 1.6rem;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 30px;
 	}
 
 	.main-navigation a {
